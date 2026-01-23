@@ -1,0 +1,11 @@
+lng_raw.csv - Sheet1
+date,region,benchmark,price_usd_mmbtu,volume_mmt,freight_usd_mmbtu,liquefaction_utilization_pct,note
+2025-01-01,US,HH,2.45,6.8,0.55,86.2,baseline
+2025-01-01,Europe,TTF,9.8,7.1,1.05,86.2,winter demand
+2025-01-01,Asia,JKM,10.4,7.6,1.2,86.2,winter demand
+2025-02-01,US,HH,2.2,6.5,0.52,84.1,maintenance
+2025-02-01,Europe,TTF,8.9,6.8,0.98,84.1,storage comfortable
+2025-02-01,Asia,JKM,9.7,7.2,1.1,84.1,soft demand
+2025-03-01,US,HH,2.1,6.9,0.5,88,ramp up
+2025-03-01,Europe,TTF,7.6,7,0.92,88,shoulder season
+2025-03-01,Asia,JKM,8.1,7.4,1,88,shoulder season
