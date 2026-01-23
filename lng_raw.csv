@@ -1,4 +1,3 @@
-lng_raw.csv - Sheet1
 date,region,benchmark,price_usd_mmbtu,volume_mmt,freight_usd_mmbtu,liquefaction_utilization_pct,note
 2025-01-01,US,HH,2.45,6.8,0.55,86.2,baseline
 2025-01-01,Europe,TTF,9.8,7.1,1.05,86.2,winter demand
