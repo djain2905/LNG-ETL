@@ -1,4 +1,5 @@
 import pandas as pd
+import os 
 
 #Export
 csv_url =  "https://raw.githubusercontent.com/djain2905/LNG-ETL/main/lng_raw.csv"     
@@ -34,7 +35,10 @@ print("Missing cells:", int(csv_df.isna().sum().sum()))       #Print number of r
 
 #Load
 from sqlalchemy import create_engine
-engine = create_engine("mysql+pymysql://dhwani.jain:2905@db.isba.co:3306/dhwani_interview_prep")
+engine = create_engine(
+    f"mysql+pymysql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
+    f"@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
+)
 
 table = "raw_LNG_data"
 csv_df.to_sql(table, engine, index = False, if_exists = "append")
